@@ -87,8 +87,11 @@ public class BlockchainFactory {
         });
     }
 
-    public void mineBlock() {
-
+    public void mineBlock(String data) {
+        Block newBlock = generateNextBlock(data);
+        addBlock(newBlock);
+        //broadcast(responseLatestMsg());
+        LOG.log(Level.INFO, "block added: " + newBlock.toString());
     }
 
     public void peers() {
@@ -108,6 +111,7 @@ public class BlockchainFactory {
 
         factory.addBlock(b1);
         factory.blocks();
-
+        factory.mineBlock("SECOND");
+        factory.blocks();
     }
 }
