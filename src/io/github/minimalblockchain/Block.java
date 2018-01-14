@@ -6,11 +6,11 @@ public class Block {
 
     private static final Logger LOG = Logger.getLogger(Block.class.getName());
 
-    private Long index;
-    private String data;
-    private Long timestamp;
-    private String hash;
-    private String prevHash;
+    private final Long index;
+    private final String data;
+    private final Long timestamp;
+    private final String hash;
+    private final String prevHash;
 
     public Block(Long index, String data, Long timestamp, String hash, String prevHash) {
         this.index = index;

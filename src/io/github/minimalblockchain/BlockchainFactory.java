@@ -1,6 +1,5 @@
 package io.github.minimalblockchain;
 
-import static java.awt.SystemColor.text;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -12,7 +11,7 @@ import java.util.logging.Logger;
 public class BlockchainFactory {
 
     private static final Logger LOG = Logger.getLogger(BlockchainFactory.class.getName());
-    private Blockchain blockchain;
+    private final Blockchain blockchain;
 
     public BlockchainFactory() {
         this.blockchain = new Blockchain();
