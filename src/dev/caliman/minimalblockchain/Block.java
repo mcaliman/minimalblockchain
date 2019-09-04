@@ -1,4 +1,4 @@
-package io.github.minimalblockchain;
+package dev.caliman.minimalblockchain;
 
 import java.util.logging.Logger;
 
