@@ -1,4 +1,4 @@
-package dev.caliman.minimalblockchain;
+package com.trueprogramming.minimalblockchain;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

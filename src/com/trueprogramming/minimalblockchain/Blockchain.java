@@ -1,4 +1,4 @@
-package dev.caliman.minimalblockchain;
+package com.trueprogramming.minimalblockchain;
 
 import java.util.ArrayList;
 import java.util.Collection;
